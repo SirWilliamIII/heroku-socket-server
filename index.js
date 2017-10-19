@@ -2,7 +2,7 @@ const server = require('net').createServer()
 let counter = 0
 let sockets = {}
 
-const port = 4000
+const port = process.env.PORT || 4000
 
 server.on('connection', socket => {
 
